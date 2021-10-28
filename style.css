@@ -1,0 +1,162 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+h1,
+h2,
+h3 {
+  font-weight: unset;
+  margin: unset;
+}
+.borderLine {
+  height: 50px;
+  border: 2px solid black;
+  opacity: 0.7;
+  margin: 0 30px;
+}
+.suggestedActivity {
+  padding-top: 10px;
+}
+.temperature {
+  font-size: 60px;
+}
+.units {
+  padding-top: 15px;
+}
+.celsFar {
+  font-size: 20px;
+  padding: 5px;
+  cursor: pointer;
+  opacity: 0.75;
+  transition: 0.5s;
+}
+.celsFar.active {
+  font-weight: bold;
+  opacity: 1;
+}
+.currentTemp {
+  display: flex;
+  flex-direction: column;
+}
+
+.currentTempWrapper {
+  display: flex;
+}
+.currentTemp h3 {
+  flex-grow: 1;
+  font-size: 60px;
+  margin-bottom: -5px;
+}
+.currentTemp section {
+  white-space: nowrap;
+}
+.containerOuter {
+  background-color: #ffdca2;
+  border-radius: 15px;
+  margin: auto;
+  padding: 20px 14px;
+  padding: 20px;
+  text-align: center;
+  width: 40%;
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.containerOuter.loading {
+  opacity: 0;
+}
+
+.currentCity {
+  text-transform: capitalize;
+}
+.col {
+  padding: 5px 0;
+  width: 100%;
+}
+.currentTempContainer1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+  width: 40%;
+  margin: auto;
+}
+.currentTempContainer2 {
+  align-items: center;
+  align-content: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin: auto;
+  padding-top: 35px;
+
+  white-space: nowrap;
+}
+.currentTempContainer1 section {
+  text-align: left;
+  margin-top: 0;
+}
+.forecast {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.dailyForecast {
+  padding-top: 20px;
+}
+.rain {
+  width: 50%;
+}
+.uvIndex {
+  width: 50%;
+}
+
+.tomorrow,
+.tomorrowPlus1,
+.tomorrowPlus2,
+.tomorrowPlus3 {
+  display: flex;
+  color: black;
+  justify-content: center;
+  background-color: white;
+  border-radius: 20px;
+  padding: 10px 0;
+  box-shadow: rgba(0, 0, 0, 0.1) 2px 2px 5px;
+  font-size: 18px;
+  align-items: center;
+}
+.searchBar {
+  flex-grow: 2;
+  margin-bottom: 15px;
+}
+.searchBar input {
+  border: none;
+  border-radius: 15px;
+  height: 35px;
+  width: 95%;
+  outline: none;
+  box-sizing: border-box;
+  padding: 15px;
+}
+.searchBtn button {
+  border: none;
+  border-radius: 15px;
+  height: 35px;
+  width: 110px;
+  box-shadow: rgba(0, 0, 0, 0.1) 2px 2px 5px;
+  cursor: pointer;
+}
+.tempEmoji {
+  flex-grow: 1;
+  font-size: 80px;
+}
+.topSection {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  text-align: center;
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="containerOuter">
+      <div class="topSection">
+        <div class="searchBar">
+          <form id="search-city-form">
+            <input type="text" placeholder="Enter City" autocomplete="off"
+            autofocus= / id="search-city-input">
+          </form>
+        </div>
+        <div class="searchBtn">
+          <button>Search</button>
+        </div>
+        <div class="searchBtn">
+          <button id="current-location-button">Location</button>
+        </div>
+      </div>
+      <div class="midSection">
+        <h1 class="currentCity">Loading...</h1>
+        <small class="currentDate">
+          <em id="date"> </em>
+        </small>
+        <h2 class="suggestedActivity">Great day for a swim 🏊‍♀️</h2>
+      </div>
+      <div class="currentTempContainer1">
+        <div class="tempEmoji">☀️</div>
+        <div class="currentTemp">
+          <div class="currentTempWrapper">
+            <span class="temperature" id="temperature">-</span>
+            <span class="units">
+              <a href="#" id="celsius-link">°C</a> |
+              <a href="#" id="fahrenheit-link">°F</a>
+            </span>
+          </div>
+          <div class="currentTempWrapper">
+            <section>
+              Sunny 24° - 27°
+              <br />
+              <small>Wind 1km/h</small>
+            </section>
+          </div>
+        </div>
+      </div>
+      <div class="currentTempContainer2">
+        <div class="rain">
+          💧 Chance of rain
+          <br />
+          <small> 10% </small>
+        </div>
+        <div class="borderLine"></div>
+        <div class="uvIndex">
+          🌞 UV Index
+          <br />
+          <small> Low </small>
+        </div>
+      </div>
+      <div class="forecast">
+        <div class="dailyForecast">
+          <div class="tomorrow">
+            <div class="col">Thu</div>
+            <div class="col">☁️</div>
+            <div class="col">17° | 20°</div>
+          </div>
+        </div>
+        <div class="dailyForecast">
+          <div class="tomorrowPlus1">
+            <div class="col">Fri</div>
+            <div class="col">🌧️</div>
+            <div class="col">14° | 19°</div>
+          </div>
+        </div>
+        <div class="dailyForecast">
+          <div class="tomorrowPlus2">
+            <div class="col">Sat</div>
+            <div class="col">🌧️</div>
+            <div class="col">12° | 15°</div>
+          </div>
+        </div>
+        <div class="dailyForecast">
+          <div class="tomorrowPlus3">
+            <div class="col">Sun</div>
+            <div class="col">🌩️</div>
+            <div class="col">12° | 15°</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
